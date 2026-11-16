@@ -1,7 +1,7 @@
 // Service worker menu utama. Hanya menangani file milik menu ini (aman dipasang di repo
 // sampurnaku.github.io yang satu alamat dengan aplikasi lain). Halaman diambil dari internet dulu,
 // lalu memakai simpanan bila offline atau lebih dari 4 detik tanpa jawaban.
-const VERSI='menu-v1';
+const VERSI='menu-v2';
 const FILE=['','index.html','manifest.webmanifest','icon-192.png','icon-512.png'];
 const BASE=new URL('./',self.location).pathname;
 const MILIK=new Set(FILE.map(f=>BASE+f));
